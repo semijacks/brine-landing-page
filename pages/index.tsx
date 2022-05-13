@@ -4,10 +4,11 @@ import Image from 'next/image';
 import styles from '../styles/Home.module.css';
 import Header from '../components/header';
 import Hero from '../components/hero';
+import MainContent from '../components/main-content';
 
 const Home: NextPage = () => {
   return (
-    <div className='min-h-screen px-12'>
+    <div className=''>
       <Head>
         <link
           rel='preload'
@@ -46,8 +47,11 @@ const Home: NextPage = () => {
           crossOrigin=''
         />
       </Head>
-      <Header />
-      <Hero />
+      <div className='mb-10 md:mb-40 px-5'>
+        <Header />
+        <Hero />
+      </div>
+      <MainContent />
     </div>
   );
 };
