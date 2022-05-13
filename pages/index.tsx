@@ -39,6 +39,12 @@ const Home: NextPage = () => {
           as='font'
           crossOrigin=''
         />
+        <link
+          rel='preload'
+          href='/images/hero-img.svg'
+          as='svg'
+          crossOrigin=''
+        />
       </Head>
       <Header />
       <Hero />
