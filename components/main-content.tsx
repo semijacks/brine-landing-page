@@ -7,6 +7,9 @@ import {
   walletImg,
   paymentsImg,
   createAccountImg,
+  ayuPose,
+  darmaPose,
+  onlinePayment,
 } from '../public/images';
 
 const MainContent = () => {
@@ -40,7 +43,7 @@ const MainContent = () => {
       </div>
 
       {/* crypto feed */}
-      <div className='flex justify-center pb-32'>
+      <div className='flex justify-center pb-0 md:pb-32'>
         <Image
           className='shadow-2xl'
           src={cryptoFeedImg}
@@ -51,14 +54,14 @@ const MainContent = () => {
       </div>
 
       {/* slide1 */}
-      <div className='flex flex-col md:flex-row max-w-6xl m-auto gap-x-16 justify-between pt-32'>
+      <section className='flex flex-col-reverse md:flex-row max-w-6xl m-auto gap-y-16 md:gap-x-16 justify-between md:pt-32'>
         <Image
           src={walletImg}
           width={402}
           height={639}
           alt={'crypto-feed image'}
         />
-        <div className='flex flex-col mt-40'>
+        <div className='flex flex-col  mt-20 md:mt-40'>
           <h1 className='text-white font-exoBold text-5xl max-w-xl'>
             Deposit Crypto Instantly
           </h1>
@@ -67,11 +70,11 @@ const MainContent = () => {
             cryptocurrencies
           </h3>
         </div>
-      </div>
+      </section>
 
       {/* slide2 */}
-      <div className='flex flex-col md:flex-row max-w-6xl m-auto gap-x-16 justify-between pt-32'>
-        <div className='flex flex-col mt-40'>
+      <section className='flex flex-col md:flex-row max-w-6xl m-auto gap-y-16 md:gap-x-16 justify-between pt-10 md:pt-32'>
+        <div className='flex flex-col md:mt-40'>
           <h1 className='text-white font-exoBold text-5xl max-w-xl'>
             Transact & Exchange Tokens
           </h1>
@@ -86,17 +89,17 @@ const MainContent = () => {
           height={639}
           alt={'crypto-feed image'}
         />
-      </div>
+      </section>
 
       {/* slide3 */}
-      <div className='flex flex-col md:flex-row max-w-6xl m-auto gap-x-16 justify-between pt-32'>
+      <section className='flex flex-col-reverse md:flex-row max-w-6xl m-auto gap-y-16 md:gap-x-16 justify-between  md:pt-32'>
         <Image
           src={createAccountImg}
           width={402}
           height={639}
           alt={'crypto-feed image'}
         />
-        <div className='flex flex-col mt-40'>
+        <div className='flex flex-col mt-10 md:mt-40'>
           <h1 className='text-white font-exoBold text-5xl max-w-xl'>
             Secure & Private
           </h1>
@@ -104,7 +107,58 @@ const MainContent = () => {
             Only you can access your wallet. We don’t collect any personal data.
           </h3>
         </div>
-      </div>
+      </section>
+
+      {/* steps section */}
+      <section className='flex flex-col max-w-6xl mx-auto mt-10 md:mt-32 pb-10 md:pb-80'>
+        <div className='flex flex-col items-center'>
+          <h1 className='text-white font-exoBold text-5xl'>
+            Get started in 3 easy steps
+          </h1>
+          <h3 className='mt-5 text-white font-exoRegular max-w-xl text-center text-2xl'>
+            It only takes a few minutes to get you started on a world of
+            seamless payments. .
+          </h3>
+        </div>
+
+        <div className='mt-24 flex flex-col lg:flex-row md:gap-x-5 gap-y-5 px-8 max-w-6xl'>
+          <div className='bg-purple-700 md:py-8 py-8 px-2 md:px-0 flex flex-col items-center justify-center rounded-lg'>
+            <Image
+              src={ayuPose}
+              width={367}
+              height={277}
+              alt='ayu-pose-image'
+            />
+            <p className='mt-5 text-white font-exoSemiBold text-2xl text-center'>
+              Download Brine Wallet
+            </p>
+          </div>
+
+          <div className='bg-purple-700  md:py-8 py-8 px-2 md:px-0 flex flex-col items-center justify-center'>
+            <Image
+              src={darmaPose}
+              width={367}
+              height={277}
+              alt='darma-pose-image'
+            />
+            <p className='mt-5 text-white font-exoSemiBold text-2xl text-center'>
+              Create an account
+            </p>
+          </div>
+
+          <div className='bg-purple-700 md:py-8 py-8 px-2 md:px-0 flex flex-col items-center justify-center'>
+            <Image
+              src={onlinePayment}
+              width={367}
+              height={277}
+              alt='online-payment-image'
+            />
+            <p className='mt-5 text-white font-exoSemiBold text-2xl text-center'>
+              Deposit crypto and make payments
+            </p>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };

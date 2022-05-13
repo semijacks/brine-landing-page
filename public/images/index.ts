@@ -6,6 +6,9 @@ import securityImg from '../images/security.svg';
 import walletImg from '../images/wallet.svg';
 import paymentsImg from '../images/payments.svg';
 import createAccountImg from '../images/create-account.svg';
+import ayuPose from '../images/ayu-pose.svg';
+import darmaPose from '../images/darma-pose.svg';
+import onlinePayment from '../images/online-payment.svg';
 
 export {
   heroImg,
@@ -16,4 +19,7 @@ export {
   walletImg,
   paymentsImg,
   createAccountImg,
+  ayuPose,
+  darmaPose,
+  onlinePayment,
 };
