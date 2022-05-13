@@ -13,6 +13,7 @@
   font-family: 'Exo Regular';
   font-style: normal;
   font-weight: 100 900;
+  font-display: swap;
   src: url(/fonts/Exo/Exo-Regular.woff2) format('woff2');
 }
 
@@ -20,6 +21,7 @@
   font-family: 'Exo Medium';
   font-style: normal;
   font-weight: 100 900;
+  font-display: swap;
   src: url(/fonts/Exo/Exo-Medium.woff2) format('woff2');
 }
 
@@ -27,6 +29,7 @@
   font-family: 'Exo SemiBold';
   font-style: normal;
   font-weight: 100 900;
+  font-display: swap;
   src: url(/fonts/Exo/Exo-SemiBold.woff2) format('woff2');
 }
 
@@ -34,5 +37,6 @@
   font-family: 'Exo Bold';
   font-style: normal;
   font-weight: 100 900;
+  font-display: swap;
   src: url(/fonts/Exo/Exo-Bold.woff2) format('woff2');
 }
