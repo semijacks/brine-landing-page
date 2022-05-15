@@ -5,6 +5,7 @@ import styles from '../styles/Home.module.css';
 import Header from '../components/header';
 import Hero from '../components/hero';
 import MainContent from '../components/main-content';
+import Footer from '../components/footer';
 
 const Home: NextPage = () => {
   return (
@@ -52,6 +53,9 @@ const Home: NextPage = () => {
         <Hero />
       </div>
       <MainContent />
+      <div className='bg-green-700'>
+        <Footer />
+      </div>
     </div>
   );
 };

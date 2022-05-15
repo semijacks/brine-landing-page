@@ -17,7 +17,7 @@ const Header = () => {
         </nav>
       </div>
       <div className='flex gap-x-5 items-center'>
-        <h3 className='font-exoMedium text-lg'>Create Account</h3>
+        <button className='font-exoMedium text-lg'>Create Account</button>
         <button className='font-exoBold px-4 py-2 rounded-lg bg-green-700 text-white text-xl shadow-md'>
           Log In
         </button>

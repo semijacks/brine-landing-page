@@ -9,6 +9,8 @@ import createAccountImg from '../images/create-account.svg';
 import ayuPose from '../images/ayu-pose.svg';
 import darmaPose from '../images/darma-pose.svg';
 import onlinePayment from '../images/online-payment.svg';
+import playstore from '../images/playstore.svg';
+import appstore from '../images/appstore.svg';
 
 export {
   heroImg,
@@ -22,4 +24,6 @@ export {
   ayuPose,
   darmaPose,
   onlinePayment,
+  playstore,
+  appstore,
 };

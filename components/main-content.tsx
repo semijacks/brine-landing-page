@@ -10,6 +10,8 @@ import {
   ayuPose,
   darmaPose,
   onlinePayment,
+  playstore,
+  appstore,
 } from '../public/images';
 
 const MainContent = () => {
@@ -54,7 +56,7 @@ const MainContent = () => {
       </div>
 
       {/* slide1 */}
-      <section className='flex flex-col-reverse md:flex-row max-w-6xl m-auto gap-y-16 md:gap-x-16 justify-between md:pt-32'>
+      <section className='flex flex-col-reverse md:flex-row max-w-6xl mx-auto gap-y-16 md:gap-x-16 justify-between md:pt-32'>
         <Image
           src={walletImg}
           width={402}
@@ -73,7 +75,7 @@ const MainContent = () => {
       </section>
 
       {/* slide2 */}
-      <section className='flex flex-col md:flex-row max-w-6xl m-auto gap-y-16 md:gap-x-16 justify-between pt-10 md:pt-32'>
+      <section className='flex flex-col md:flex-row max-w-6xl mx-auto gap-y-16 md:gap-x-16 justify-between pt-10 md:pt-32'>
         <div className='flex flex-col md:mt-40'>
           <h1 className='text-white font-exoBold text-5xl max-w-xl'>
             Transact & Exchange Tokens
@@ -92,7 +94,7 @@ const MainContent = () => {
       </section>
 
       {/* slide3 */}
-      <section className='flex flex-col-reverse md:flex-row max-w-6xl m-auto gap-y-16 md:gap-x-16 justify-between  md:pt-32'>
+      <section className='flex flex-col-reverse md:flex-row max-w-6xl mx-auto gap-y-16 md:gap-x-16 justify-between  md:pt-32'>
         <Image
           src={createAccountImg}
           width={402}
@@ -110,7 +112,7 @@ const MainContent = () => {
       </section>
 
       {/* steps section */}
-      <section className='flex flex-col max-w-6xl mx-auto mt-10 md:mt-32 pb-10 md:pb-80'>
+      <section className='flex flex-col max-w-6xl mx-auto mt-10 md:mt-32 pb-10 md:pb-40'>
         <div className='flex flex-col items-center'>
           <h1 className='text-white font-exoBold text-5xl'>
             Get started in 3 easy steps
@@ -157,6 +159,32 @@ const MainContent = () => {
               Deposit crypto and make payments
             </p>
           </div>
+        </div>
+      </section>
+
+      {/* download app section */}
+      <section className='flex flex-col max-w-6xl mx-auto items-center pb-10 md:pb-40'>
+        <h1 className='font-exoBold  text-5xl text-white'>
+          Get Brine Wallet app now!
+        </h1>
+        <h3 className='mt-5 font-exoRegular text-2xl text-white'>
+          The most trusted crypto wallet
+        </h3>
+        <div className='mt-10 flex gap-x-4'>
+          <Image
+            className='hover:cursor-pointer'
+            src={playstore}
+            width={182}
+            height={54}
+            alt='online-payment-image'
+          />
+          <Image
+            className='hover:cursor-pointer'
+            src={appstore}
+            width={163}
+            height={54}
+            alt='online-payment-image'
+          />
         </div>
       </section>
     </div>
